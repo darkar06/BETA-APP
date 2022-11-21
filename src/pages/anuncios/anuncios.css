@@ -1,0 +1,84 @@
+.anuncios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.anuncios h3 {
+    margin-bottom: 10px;
+}
+
+.vacio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    max-height: 400px;
+    margin-top: 30px;
+    max-width: 1200px;
+}
+
+.search__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: var(--blanco2);
+    position: relative;
+}
+
+.search__box input {
+    border: none;
+    display: block;
+    min-width: 150px;
+    width: 100%;
+    max-width: 200px;
+    background: none;
+    outline: none;
+    margin-right: 5px;
+}
+
+.search__box i {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.search__box i svg {
+    width: 20px;
+    height: 20px;
+}
+
+.search__box button {
+    border: none;
+    background-color: var(--negro1);
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: var(--azulClaro);
+}
+
+.anuncios__container {
+    width: 100%;
+    margin-top: 30px;
+    max-width: 1200px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 400px;
+}
+
+
+@media screen and (min-width: 800px) {
+    .anuncios {
+        padding: 30px 100px;
+    }
+}

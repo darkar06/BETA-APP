@@ -1,0 +1,24 @@
+svg{
+    height: 35px;
+    width: 35px;
+    display: block;
+}
+
+svg[cuality="change"]{
+
+    animation: aparecer .3s ease;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+        filter: blur(3px);
+        transform: translateX(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(0px);
+    }
+}

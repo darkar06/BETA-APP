@@ -1,0 +1,46 @@
+.anuncio {
+    display: grid;
+    grid-template-rows: 360px 40px;
+}
+
+.anuncio a {
+    color: var(--negro1);
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 200px 60px 80px;
+}
+
+.anuncio img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.anuncio p {
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    word-break: break-all;
+}
+
+.anuncio p::before {
+    content: "";
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent, var(--blanco1));
+}
+
+.anuncios button {
+    display: block;
+    padding: 8px 16px;
+    height: 40px;
+    width: 100px;
+    color: var(--azulClaro);
+    border: none;
+    background: var(--negro1);
+    border-radius: 4px;
+}

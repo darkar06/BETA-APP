@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
 import './App.css'
+import RouterManager from "./Router_manager"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
+      <RouterManager />
     </div>
   )
 }

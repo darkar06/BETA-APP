@@ -1,0 +1,92 @@
+.noticia {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.noticia .img {
+    height: 400px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.noticia .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.noticia .actions {
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.noticia .back {
+    height: 50px;
+    background: var(--negro1);
+    width: 120px;
+    border-radius: 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 2px 0px 0px var(--naranjaClaro);
+    cursor: pointer;
+}
+
+.noticia .delete {
+    height: 50px;
+    background: var(--negro1);
+    width: 120px;
+    border-radius: 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 2px 0px 0px var(--rojoClaro);
+    cursor: pointer;
+}
+
+.noticia .delete span {
+    color: var(--rojoClaro);
+}
+
+.noticia .back span {
+    color: var(--naranjaClaro);
+}
+
+.noticia i {
+    transform: translateX(-3px);
+}
+
+.noticia .title {
+    background: var(--blanco3);
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 10px 30px;
+}
+
+
+.content p {
+    word-break: break-all;
+}
+
+.noticia .content {
+    padding: 10px 40px;
+    min-width: 300px;
+    max-width: 1000px;
+    width: 100%;
+}

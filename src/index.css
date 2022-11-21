@@ -1,70 +1,113 @@
+@font-face {
+    font-family: "black";
+    src: url("./assets/fonts/Rubik-Black.ttf");
+}
+
+@font-face {
+    font-family: "bold";
+    src: url("./assets/fonts/Rubik-Bold.ttf");
+}
+
+@font-face {
+    font-family: "medium";
+    src: url("./assets/fonts/Rubik-Medium.ttf");
+}
+
+@font-face {
+    font-family: "ligth";
+    src: url("./assets/fonts/Rubik-Light.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+    /*claro*/
+    --azulClaro: #288FEE;
+    --rojoClaro: #F53131;
+    --verdeClaro: #30F92C;
+    --naranjaClaro: #F5A224;
+    --moradoClaro: #BE1FF6;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    --blanco1: #EAEAEB;
+    --blanco2: #DBDCDD;
+    --blanco3: #CBCBCD;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+    /*oscuro*/
+    --azulOscuro: #0071D9;
+    --rojoOscuro: #F20000;
+    --verdeOscuro: #04CF00;
+    --naranjaOscuro: #DF8601;
+    --moradoOscuro: #9800CD;
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    --negro1: #2D3135;
+    --negro2: #626468;
+    --negro3: #96989A;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+    font-size: 66px;
+    font-family: "black";
 }
+
+h2 {
+    font-size: 50px;
+    font-family: bold;
+}
+
+h3 {
+    font-size: 37px;
+    font-family: ligth;
+}
+
+h4 {
+    font-size: 28px;
+    font-family: bold;
+}
+
+h5 {
+    font-size: 21px;
+    font-family: medium;
+}
+
+h6 {
+    font-size: 16px;
+    font-family: medium;
+}
+
+a {
+    font-size: 16px;
+    font-family: medium;
+}
+
+span {
+    font-size: 16px;
+    font-family: medium;
+}
+
+p {
+    font-size: 16px;
+    font-family: medium;
+}
+
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+    font-size: 14px;
+    font-family: medium;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+input::placeholder {
+    font-size: 14px;
+    font-family: medium;
 }
+
+/* .section{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    width: 100vw;
+    height: 100vh;
+    justify-items: center;
+} */

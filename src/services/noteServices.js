@@ -13,6 +13,7 @@ const tokenManager = () => {
 export const change = data => {
   return fetch("http://localhost:3200/api/score", {
     method: "PUT",
+
     headers: { "authorization": tokenManager(), "content-type": "application/json" },
     body: JSON.stringify(data)
   })
